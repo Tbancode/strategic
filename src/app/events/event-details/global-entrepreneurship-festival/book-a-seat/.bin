@@ -1,0 +1,79 @@
+<!-- // {/* <OrderOfEvents className={openContent ? '' : 'hide_bg'}>
+  <OrderOfEventsInner>
+    <div>
+      <h1 onClick={() => setOpenContent(!openContent)}>
+        ORDER OF EVENTS{' '}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="13"
+          viewBox="0 0 22 13"
+          fill="none"
+        >
+          <path
+            d="M1 1.5L11 11.5L21 1.5"
+            stroke="#FFBD00"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </h1>
+
+      <p>
+        What events and activities should you expect from this grand
+        event? Here is a list to give you an insight of what is to come:
+      </p>
+    </div>
+    {openContent && (
+      <EventsWrapper>
+        {order_of_events.map((event, i) => (
+          <EventBox key={i}>
+            <h3>{event.heading}</h3>
+            <p>{event.detail}</p>
+          </EventBox>
+        ))}
+      </EventsWrapper>
+    )}
+  </OrderOfEventsInner>
+</OrderOfEvents>
+<OurStanceSection>
+  <OurStanceInner>
+    <header>
+      <h1>OUR STANCE</h1>
+    </header>
+    <p>
+      We, Strategic Solutions Global, as event partners of this grand
+      festival, bring you a channel to experience this event. Our package
+      brings benefits that let you enjoy what the event offers on the
+      maximum scale. Prepare to be in the same room with big names,
+      leaders and industry experts from different countries across the
+      world.
+    </p>
+    <Link href="global-entrepreneurship-festival/book-a-seat">
+      BOOK A SEAT
+    </Link>
+  </OurStanceInner>
+</OurStanceSection> */}
+{/* <WhatYouGetSection>
+  <h1>What You Get</h1>
+
+  <div>
+    <Image src={flow_2} alt="flow path" />
+  </div>
+
+  <WhatYouGetMobile>
+    <Image
+      src={what_you_get_mobile}
+      alt="what you get image"
+      quality={100}
+      priority
+    />
+  </WhatYouGetMobile>
+</WhatYouGetSection>
+<MealSection>
+  <h1>MEAL AND ACCOMODATION COVERED</h1>
+  <Link href="global-entrepreneurship-festival/book-a-seat">
+    BOOK A SEAT
+  </Link>
+</MealSection> */} -->
