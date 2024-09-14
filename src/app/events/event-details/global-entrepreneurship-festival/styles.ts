@@ -751,7 +751,7 @@ export const Ticket = styled.div`
         }
         @media (max-width: 768px) {
           width: 95%;
-          height: 4000px;
+          height: 3400px;
           margin: 150px auto;
           h1{
             font-size: 20px;
