@@ -842,11 +842,11 @@ export const Card = styled.div`
         margin: auto auto 50px auto;
        
         h2{
-          font-size: 28px;
+          font-size: 20px;
           width: 260px;
-          height: 86px;
+          height: 24px;
           text-align: left;
-          margin: 40px auto 0px 45px;
+          margin: 40px auto 0px 40px;
           line-height: 33.2px;
         }
         h4{
@@ -854,13 +854,13 @@ export const Card = styled.div`
           width: 280px;
           height: 24px;
           text-align: left;
-          margin-left: 45px;
-          /* margin-top: -45px; */
+          margin-left: 40px;
+          margin-top: 8px;
           margin-bottom: 30px;
           line-height: 24px;
         }
         h3{
-          font-size: 40px;
+          font-size: 36px;
           width: 139px;
           height: 29px;
           text-align: left;
