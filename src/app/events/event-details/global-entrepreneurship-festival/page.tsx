@@ -82,6 +82,16 @@ const GlobalEntrepreneurshipFestival = () => {
     localStorage.setItem('selectedCardSubtitle', subtitle)
     console.log(`Price saved: ${price}, Content saved: ${cardContent}`);
   };
+
+  // const handleCardClick = (price: string, title: string, cardContent: string[], subtitle: string) => {
+  //   if (typeof window !== 'undefined') {
+  //     localStorage.setItem('selectedPrice', price); // Store the price in localStorage
+  //     localStorage.setItem('selectedContent', JSON.stringify(cardContent)); // Store the content in localStorage
+  //     localStorage.setItem('selectedCardTitle', title);
+  //     localStorage.setItem('selectedCardSubtitle', subtitle);
+  //     console.log(`Price saved: ${price}, Content saved: ${cardContent}`);
+  //   }
+  // };
   
 
   const Select = (

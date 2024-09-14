@@ -43,9 +43,16 @@ const CTASection = ({
     setSection('payment');
   };
 
-  const handleClick = ( price: string) => {
-    localStorage.setItem('selectedPrice', price);  // Store the price in localStorage
-    console.log(`Price saved: ${price}`);
+  // const handleClick = ( price: string) => {
+  //   localStorage.setItem('selectedPrice', price);  // Store the price in localStorage
+  //   console.log(`Price saved: ${price}`);
+  // };
+  const handleClick = (price: string) => {
+    if (typeof window !== 'undefined') {
+      // Ensure localStorage is only accessed on the client side
+      localStorage.setItem('selectedPrice', price);
+      console.log(`Price saved: ${price}`);
+    }
   };
  
   return (

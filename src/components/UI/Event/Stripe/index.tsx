@@ -1,3 +1,57 @@
+// 'use client';
+// import { useEffect, useState } from 'react';
+// import styled from 'styled-components';
+// import { Elements } from '@stripe/react-stripe-js';
+// import { loadStripe } from '@stripe/stripe-js';
+// import CheckoutPage from './CheckoutPage';
+// import convertToSubcurrency from '../../../../../utils/convertToSubcurrency';
+
+
+// const stripePromise = loadStripe(
+//   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
+// );
+
+
+
+// // interface Stripe {
+// //   amount: number;
+// // }
+
+// const Stripe: React.FC = () => {
+
+//   const storedPrice = localStorage.getItem('selectedPrice');
+//   const amount = storedPrice ? parseFloat(storedPrice.replace(/[^0-9.-]+/g, "")) : null;
+
+//   if (amount === null) {
+//     // Render loading state while amount is being retrieved
+//     return <div>Loading...</div>;
+//   }
+
+
+// // const Stripe = () => {
+//   // const amount = 250;
+//   return (
+//     <StripeWrapper>
+//       <div>
+//         {/* <h1>Make payment to complete seat booking!</h1> */}
+//         <h2>${amount}</h2>
+//       </div>
+
+//       <Elements
+//         stripe={stripePromise}
+//         options={{
+//           mode: 'payment',
+//           amount: convertToSubcurrency(amount),
+//           currency: 'usd',
+//         }}
+//       >
+//         <CheckoutPage amount={amount} />
+//       </Elements>
+//     </StripeWrapper>
+//   );
+// };
+
+// export default Stripe;
 'use client';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
@@ -6,34 +60,72 @@ import { loadStripe } from '@stripe/stripe-js';
 import CheckoutPage from './CheckoutPage';
 import convertToSubcurrency from '../../../../../utils/convertToSubcurrency';
 
-
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
 );
 
-
-
-// interface Stripe {
-//   amount: number;
-// }
-
 const Stripe: React.FC = () => {
+  // const [amount, setAmount] = useState<number | null>(null);
 
-  const storedPrice = localStorage.getItem('selectedPrice');
-  const amount = storedPrice ? parseFloat(storedPrice.replace(/[^0-9.-]+/g, "")) : null;
+  // useEffect(() => {
+  //   // Ensure localStorage is only accessed in the client/browser
+  //   if (typeof window !== 'undefined') {
+  //     const storedPrice = localStorage.getItem('selectedPrice');
+  //     const parsedAmount = storedPrice
+  //       ? parseFloat(storedPrice.replace(/[^0-9.-]+/g, ""))
+  //       : null;
+  //     setAmount(parsedAmount);
+  //   }
+  // }, []);
 
-  if (amount === null) {
-    // Render loading state while amount is being retrieved
+  // if (amount === null) {
+  //   return <div>Loading...</div>;
+  // }
+   const [amount, setAmount] = useState<number | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchAmount = async () => {
+      try {
+        if (typeof window !== 'undefined') {
+          const storedPrice = localStorage.getItem('selectedPrice');
+          const parsedAmount = storedPrice
+            ? parseFloat(storedPrice.replace(/[^0-9.-]+/g, ""))
+            : null;
+          if (parsedAmount !== null) {
+            setAmount(parsedAmount);
+          } else {
+            setError('No valid price found.');
+          }
+        }
+      } catch (err) {
+        setError('Error retrieving price from localStorage.');
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchAmount();
+  }, []);
+
+  if (loading) {
     return <div>Loading...</div>;
   }
 
+  if (error) {
+    return <div>{error}</div>;
+  }
 
-// const Stripe = () => {
-  // const amount = 250;
+  if (amount === null) {
+    return <div>No amount available.</div>;
+  }
+
+
   return (
     <StripeWrapper>
       <div>
-        {/* <h1>Make payment to complete seat booking!</h1> */}
         <h2>${amount}</h2>
       </div>
 
@@ -51,7 +143,10 @@ const Stripe: React.FC = () => {
   );
 };
 
+
+
 export default Stripe;
+
 
 // const StripeWrapper = styled.div`
 //   background: var(--White);
