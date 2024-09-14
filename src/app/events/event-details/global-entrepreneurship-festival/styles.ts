@@ -864,7 +864,7 @@ export const Card = styled.div`
           width: 139px;
           height: 29px;
           text-align: left;
-          margin-left: 45px;
+          margin-left: 40px;
           margin-bottom: 30px;
           /* margin: 5px auto 25px auto; */
           line-height: 24px;
