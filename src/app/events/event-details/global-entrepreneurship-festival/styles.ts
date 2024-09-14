@@ -230,6 +230,7 @@ export const Comment = styled.div`
    font-size: 24px;
    font-family: var(--font-satoshi);
    @media (max-width: 768px) {
+    margin-top: 100px;
     font-size: 16px;
     line-height: 30px;
     width:  98%;
@@ -627,7 +628,7 @@ export const Perk = styled.div`
         }
         .mobile{
           display: inline-flex;
-          margin: auto;
+          margin: auto auto 100px auto;
           width: 100%;
           justify-content: center;
         }
