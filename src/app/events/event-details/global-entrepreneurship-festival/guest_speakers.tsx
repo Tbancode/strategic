@@ -64,7 +64,7 @@ const H6 = styled.h6`
   margin-bottom: 30px;
   /* width: 181.86px; */
   @media (max-width: 768px) {
-      width: 140px;
+      width: 147px;
       height: 28px;
       font-size: 12px;
       }
