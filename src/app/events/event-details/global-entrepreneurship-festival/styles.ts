@@ -724,7 +724,7 @@ export const Immersion = styled.div`
 export const Ticket = styled.div`
         width: 1358px;
         height: 684px;
-        margin: 300.11px auto 200px auto;
+        margin: 200.11px auto 200px auto;
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -885,7 +885,7 @@ export const Card = styled.div`
 `
 export const Schedule = styled.div`
          width: 1077px;
-         margin: 150px auto auto auto;
+         margin: 350px auto auto auto;
          div{
           width: 986px;
           height: 151px;
@@ -913,7 +913,7 @@ export const Schedule = styled.div`
         }
     }
     @media (max-width: 768px) {
-      margin-top: 100px;
+      margin-top: 30px;
       width: 100%;
       div{
         width: 95%;

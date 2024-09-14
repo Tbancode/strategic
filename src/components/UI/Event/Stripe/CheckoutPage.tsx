@@ -240,7 +240,7 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name</label>
+      <label htmlFor="name">Names</label>
       <input
         id="name"
         type="text"
