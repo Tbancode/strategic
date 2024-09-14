@@ -750,7 +750,7 @@ export const Ticket = styled.div`
         }
         @media (max-width: 768px) {
           width: 95%;
-          height: 2470px;
+          height: 3500px;
           margin: 150px auto;
           h1{
             font-size: 20px;
@@ -779,7 +779,7 @@ export const TicketCard = styled.div`
           /* padding: 28px; */
           @media (max-width: 768px) {
           width: 98%;
-          height: 2364px;
+          height: 3164px;
           flex-direction: column;
           margin: auto;
 ;
@@ -799,7 +799,7 @@ export const Card = styled.div`
           line-height: 24px;
           text-align: left;
           color: #ffffff;
-          margin: 30px  0 0 25px ;
+          margin: 30px  0px 0px 25px ;
 
        }
        h4{
@@ -809,7 +809,7 @@ export const Card = styled.div`
         line-height: 16.8px;
         text-align: left;
         margin-left: 25px;
-        margin-top: 4px;
+        /* margin-top: 4px; */
         color: #ffffff;
 
        }
@@ -836,38 +836,42 @@ export const Card = styled.div`
        }
        @media (max-width: 768px) {
         width: 90%;
-        height: 570px;
+        height: 648px;
         margin: auto auto 50px auto;
        
         h2{
-          font-size: 36px;
-          width: 352px;
+          font-size: 28px;
+          width: 362px;
           height: 86px;
-          text-align: center;
-          margin: 40px auto auto auto;
+          text-align: left;
+          margin: 40px auto 0px 45px;
           line-height: 43.2px;
         }
         h4{
-          font-size: 20px;
-          width: 234px;
+          font-size: 18px;
+          width: 280px;
           height: 24px;
-          text-align: center;
-          margin: 15px auto auto auto;
+          text-align: left;
+          margin-left: 45px;
+          margin-top: -45px;
+          margin-bottom: 30px;
           line-height: 24px;
         }
         h3{
           font-size: 40px;
           width: 139px;
           height: 29px;
-          text-align: center;
-          margin: 15px auto 25px auto;
+          text-align: left;
+          margin-left: 45px;
+          margin-bottom: 30px;
+          /* margin: 5px auto 25px auto; */
           line-height: 24px;
         }
         p{
           font-size: 14px;
           width: 287px;
           height: 19px;
-          text-align: center;
+          text-align: left;
           /* margin: 25px auto auto auto; */
           line-height: 19.2px;
         }

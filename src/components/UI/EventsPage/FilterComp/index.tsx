@@ -53,7 +53,7 @@ const FilterComp: React.FC<FilterCompProps> = ({
       setIsDropDownOpen(false);
     }
   };
-
+/* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     document.addEventListener('click', handleOutsideClick as any);
     return () => {

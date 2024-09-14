@@ -1,10 +1,11 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, Dispatch } from 'react';
 import { DISPATCH_ACTION, PayPalButtons, usePayPalScriptReducer } from '@paypal/react-paypal-js';
 
 const PayPalButton = () => {
   const [{ options }, dispatch] = usePayPalScriptReducer();
 
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     dispatch({
       type: DISPATCH_ACTION.RESET_OPTIONS,

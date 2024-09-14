@@ -12,8 +12,7 @@ import {
   Label,
   Input,
   SubmitBtn,
-  List, 
-  Details
+  
 } from './styles';
 import Stripe from '../Stripe';
 

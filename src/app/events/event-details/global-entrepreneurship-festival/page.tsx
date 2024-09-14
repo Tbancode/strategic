@@ -145,9 +145,9 @@ const GlobalEntrepreneurshipFestival = () => {
             <h3>Join a Global Gathering of Visionaries</h3>
           </div>
           <p>
-          This November, Nigeria will host the Global Entrepreneurship Festival, a premier event where global leaders, entrepreneurs, creatives, and investors converge to create, innovate, and inspire. It's a unique opportunity to immerse yourself in a dynamic environment of high-value networking and collaboration, all set against the vibrant backdrop of Nigerian culture and hospitality.
+          This November, Nigeria will host the Global Entrepreneurship Festival, a premier event where global leaders, entrepreneurs, creatives, and investors converge to create, innovate, and inspire. It&apos;s a unique opportunity to immerse yourself in a dynamic environment of high-value networking and collaboration, all set against the vibrant backdrop of Nigerian culture and hospitality.
           </p>
-          <img
+          <Image
                src="/images/aboutevent_image.png"
                alt="Description"
                width={892.99}
@@ -163,27 +163,34 @@ const GlobalEntrepreneurshipFestival = () => {
 
         <Panelist>
         <ImageWrapper>
-        <img
+        <Image
           src="/images/PanelistImg1.png"
           alt="Description"
-          
-          // priority
+          width= {286.67}
+          height= {321}
+          priority
         />
       </ImageWrapper>
 
       <ImageWrapper>
-        <img
+        <Image
           src="/images/PanelistImg2.png"
           alt="Description"
           style={{ borderRadius: '12px' }}
+          width= {286.67}
+         height= {321}
+         priority
         />
       </ImageWrapper>
 
       <ImageWrapper>
-        <img
+        <Image
           src="/images/PanelistImg3.png"
           alt="Description"
           style={{ borderRadius: '12px' }}
+          width= {286.67}
+          height= {321}
+          priority
         />
       </ImageWrapper>
          </Panelist>

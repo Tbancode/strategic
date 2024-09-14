@@ -322,7 +322,7 @@ const Form = styled.form`
   button {
     margin-top: 1rem;
     width: 100%;
-    background-color: var(--Gold);
+    background-color: var(--Charcoal);
     height: 4rem;
     border: none;
     border-radius: 0.25rem;

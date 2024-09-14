@@ -29,46 +29,20 @@ export const CTAInner = styled.main`
   /* margin-left: 50px; */
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   gap: 3.75rem;
 
 
   @media (max-width: 768px) {
     width: 90%;
     flex-direction: column;
-  }
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+    margin: auto;
+}
 `;
 
-export const Details = styled.div`
-          
-    h2{
-      font-size: 35px;
-      font-family: var(--font-lora);
-      color: var(--Gold, #ffbd00);
-      margin-bottom: 5px;
-  }
-  h3{
-    font-size: 18px;
-    font-family: var(--font-satoshi);
-    color: var(--Gold, #ffbd00);
-    margin-bottom: 40px;
-  }
-`
 
-export const List = styled.ul`
-        font-size: 18px;
-        line-height: 120%;
-        font-family: var(--font-satoshi);
-        color: var(--Grey);
-        li{
-          margin-bottom: 15px;
-          list-style: none;
-        }
-        li:before {
-           content: '✓ ';
-          }
-
-`
 
 export const CTATextCtn = styled.div`
   display: flex;
@@ -77,6 +51,7 @@ export const CTATextCtn = styled.div`
   margin-left: 160px;
   margin-bottom: 30px;
   gap: 1.13rem;
+  align-items: flex-start;
 
   h1 {
     color: var(--White, #fff);
@@ -96,14 +71,18 @@ export const CTATextCtn = styled.div`
 
   @media (max-width: 768px) {
     gap: 0.64rem;
+    margin-left: 20px;
+    width: 40rem;
     h1 {
-      max-width: 13.1875rem !important;
+      max-width: 19.1875rem !important;
       font-size: 1.9375rem;
+      /* text-align: center; */
     }
 
     p {
       max-width: 14.375rem;
       font-size: 1rem;
+      text-align: left;
     }
   }
 `;
@@ -117,6 +96,9 @@ export const Form = styled.form`
 
   @media (max-width: 768px) {
     gap: 0.88631rem;
+    width: 90%;
+    margin: auto;
+    
   }
 `;
 
@@ -164,6 +146,7 @@ export const Input = styled.input`
 
   @media (max-width: 768px) {
     padding: 0.74544rem 0.62038rem 0.81706rem 0.62038rem;
+    width: 100%;
   }
 `;
 

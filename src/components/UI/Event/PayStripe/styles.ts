@@ -16,7 +16,9 @@ export const CTAWrapper = styled.section`
   }
 
   @media (max-width: 768px) {
+    width: 100%;
     padding: 2.5rem 0;
+    flex-direction: column;
   }
 `;
 
@@ -52,6 +54,19 @@ export const Details = styled.div`
     color: var(--Gold, #ffbd00);
     margin-bottom: 40px;
   }
+  @media (max-width: 768px) {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  h2{
+    width: 90%;
+    margin-left: 20px;
+  }
+  h3{
+    margin-left: 20px;
+    }
 `
 
 export const List = styled.ul`
@@ -66,7 +81,12 @@ export const List = styled.ul`
         li:before {
            content: '✓ ';
           }
-
+          @media (max-width: 768px) {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+          }
 `
 
 export const CTATextCtn = styled.div`
@@ -95,6 +115,9 @@ export const CTATextCtn = styled.div`
 
   @media (max-width: 768px) {
     gap: 0.64rem;
+    width: 90%;
+    height: 600px;
+    margin-left: 30px;
     h1 {
       max-width: 13.1875rem !important;
       font-size: 1.9375rem;

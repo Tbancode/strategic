@@ -98,11 +98,11 @@ const ImageSelectionComponent: React.FC = () => {
               isSelected={selectedImageId === image.id}
               onClick={() => handleImageClick(image.id)}
             >
-              <img
+              <Image
                 src={image.srcofImg}
                 alt={`Image with Id ${image.id}`}
-                // width="150"
-                // height="150"
+                width={150}
+                height={150}
                 style={{
                     borderRadius: '50%',
                     border: selectedImageId === image.id ? '3px solid #FFBD00' : '2px solid transparent',
@@ -164,6 +164,11 @@ const ImageWrapper = styled.div<{ isSelected: boolean }>`
     display: block;
     width: 150px;
     height: 150px;
+  
+    img:hover{
+      width: 152px;
+    height: 152px;
+    }
   }
 
   p {
@@ -180,10 +185,16 @@ const ImageWrapper = styled.div<{ isSelected: boolean }>`
       width: 70px;
       height: 70px;
     }
+      img:hover{
+        width: 70.5px;
+    height: 70.5px;
+      }
+    
     p{
       font-size: 8px;
     }
   }
+
 `;
 
 const IconLinks = styled.div`

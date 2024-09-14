@@ -60,14 +60,6 @@ const PayStripe = ({
   return (
     <CTAWrapper className={isDark ? 'add_styles' : ''}>
       <CTATextCtn>
-          {/* <h1
-            style={{
-              maxWidth,
-            }}
-          >
-            {title}
-          </h1>
-          <p>{subtitle}</p> */}
           
           <Details>     
             <h2>{selectedCardTitle}</h2>
@@ -82,42 +74,6 @@ const PayStripe = ({
             
         </CTATextCtn>
 
-      {/* <CTAInner>
-        
-        {section === 'form' && (
-          <Form onSubmit={handleSubmit}>
-            <NameSegment>
-              <FormGroup>
-                <Label>First Name</Label>
-                <Input type="text" name="first_name" id="first_name" />
-              </FormGroup>
-              <FormGroup>
-                <Label>Last Name</Label>
-                <Input type="text" name="last_name" id="last_name" />
-              </FormGroup>
-            </NameSegment>
-            <FormGroup>
-              <Label>Email Address</Label>
-              <Input type="email" name="email" id="email" />
-            </FormGroup>
-            <FormGroup>
-              <Label>Country</Label>
-              <Input type="text" name="country" />
-            </FormGroup>
-            {isHomepage && (
-              <FormGroup>
-                <Label>Job Title</Label>
-                <Input type="text" />
-              </FormGroup>
-            )}
-            <SubmitBtn type="submit" className={isDark ? 'add_styles' : ''}>
-              {/* {buttonText} */}
-            {/* </SubmitBtn> */}
-          {/* </Form> */}
-        {/* )} */}
-        {/* {section === 'payment' && <Stripe />} */}
-        
-      {/* </CTAInner> */} */
       <Stripe />
     </CTAWrapper>
   );
