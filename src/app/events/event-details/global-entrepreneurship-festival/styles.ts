@@ -841,7 +841,7 @@ export const Card = styled.div`
        
         h2{
           font-size: 28px;
-          width: 362px;
+          width: 342px;
           height: 86px;
           text-align: left;
           margin: 40px auto 0px 45px;
