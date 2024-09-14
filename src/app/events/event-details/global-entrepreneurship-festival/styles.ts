@@ -592,7 +592,7 @@ export const VIP = styled.div`
        h3{
         font-size: 16px;
         line-height: 30px;
-        width: 388px;
+        width: 89%;
         height: 68px;
         margin-bottom: 100px;
        }
@@ -648,7 +648,7 @@ export const Panelist = styled.div`
     overflow-x: auto;
     gap: 5px;
     padding: 5px;
-    width: 100%;
+    width: 90%;
      // Ensure the panel takes the full width on mobile
 
     &::-webkit-scrollbar {
@@ -700,7 +700,7 @@ export const Immersion = styled.div`
         display: none;
        }
        @media (max-width: 768px) {
-         width: 431.82px;
+         width: 97%;
          height: 663px;
          h1{
           font-size: 20px;
