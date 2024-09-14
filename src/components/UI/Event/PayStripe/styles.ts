@@ -62,10 +62,10 @@ export const Details = styled.div`
   }
   h2{
     width: 90%;
-    margin-left: 20px;
+    margin-left: 7px;
   }
   h3{
-    margin-left: 20px;
+    margin-left: 7px;
     }
 `
 
@@ -83,7 +83,7 @@ export const List = styled.ul`
           }
           @media (max-width: 768px) {
             width: 90%;
-            margin: auto;
+            margin: auto auto auto 7px;
             display: flex;
             flex-direction: column;
           }
@@ -117,7 +117,7 @@ export const CTATextCtn = styled.div`
     gap: 0.64rem;
     width: 90%;
     height: 600px;
-    margin-left: 30px;
+    margin-left: 0px;
     h1 {
       max-width: 13.1875rem !important;
       font-size: 1.9375rem;

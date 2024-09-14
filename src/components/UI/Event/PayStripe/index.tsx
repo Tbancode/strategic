@@ -68,7 +68,7 @@ const PayStripe = ({
         {selectedContent.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
-      </List>
+      </List> 
       </Details>
  
             

@@ -157,10 +157,10 @@ export const AboutThisEvent = styled.div`
   /* background: radial-gradient(47.05% 50% at 50% 50%, rgba(26, 39, 201, 0.34) 0%, rgba(26, 39, 201, 0) 100%); */
 
 
-  div {
+  /* div {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.75rem; */
 
     h3 {
       color: var(--Gold, #ffbd00);
@@ -170,7 +170,7 @@ export const AboutThisEvent = styled.div`
       font-size: 2rem;
       line-height: 120%; /* 1.875rem */
     }
-  }
+  /* } */
 
   p {
     max-width: 54.125rem;
@@ -192,13 +192,15 @@ export const AboutThisEvent = styled.div`
     width: 90%;
 
       h3 {
-        font-size: 1rem;
+        font-size: 1.25rem;
+        color: var(--Gold, #ffbd00);
+        width: 97%;
       }
     
 
     p {
       font-size: 1rem;
-      gap: 1.25rem;
+      gap: 1rem;
       max-width: 100%;
     }
     img{
@@ -230,7 +232,7 @@ export const Comment = styled.div`
    font-size: 24px;
    font-family: var(--font-satoshi);
    @media (max-width: 768px) {
-    margin-top: 150px;
+    margin-top: 190px;
     font-size: 16px;
     line-height: 30px;
     width:  98%;
@@ -494,7 +496,7 @@ export const LinkBtn = styled.button`
         border: 2px solid #D9D9E3;
         width: 322px;
         height: 60px;
-        margin: 98.99px auto;
+        margin: 54.99px auto 90px auto ;
         padding: 17px 33px;
         cursor: pointer;
         a{
@@ -550,7 +552,7 @@ export const VIP = styled.div`
        }
 
        h1{
-        font-size: 32px;
+        font-size: 20px;
         margin-bottom: 37px;
         width: 523.01px;
         height: 76px;
@@ -628,7 +630,7 @@ export const Perk = styled.div`
         }
         .mobile{
           display: inline-flex;
-          margin: auto auto 150px auto;
+          margin: auto auto 120px auto;
           width: 100%;
           justify-content: center;
         }
@@ -752,11 +754,12 @@ export const Ticket = styled.div`
         @media (max-width: 768px) {
           width: 95%;
           height: 3000px;
-          margin: 150px auto;
+          margin: 50px auto;
           h1{
             font-size: 20px;
             line-height: 24px;
-            margin-bottom: 30px;
+            margin-top: 45px;
+            margin-bottom: 20px;
           }
           h2{
             width: 223px;
@@ -846,7 +849,7 @@ export const Card = styled.div`
           width: 260px;
           height: 24px;
           text-align: left;
-          margin: 40px auto 0px 40px;
+          margin: 40px auto 0px 35px;
           line-height: 33.2px;
         }
         h4{
@@ -854,7 +857,7 @@ export const Card = styled.div`
           width: 280px;
           height: 24px;
           text-align: left;
-          margin-left: 40px;
+          margin-left: 35px;
           margin-top: 8px;
           margin-bottom: 30px;
           line-height: 24px;
@@ -864,7 +867,7 @@ export const Card = styled.div`
           width: 139px;
           height: 29px;
           text-align: left;
-          margin-left: 40px;
+          margin-left: 35px;
           margin-bottom: 30px;
           /* margin: 5px auto 25px auto; */
           line-height: 24px;
@@ -882,7 +885,7 @@ export const Card = styled.div`
 `
 export const Schedule = styled.div`
          width: 1077px;
-         margin: 300px auto auto auto;
+         margin: 150px auto auto auto;
          div{
           width: 986px;
           height: 151px;

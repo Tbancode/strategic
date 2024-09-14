@@ -150,10 +150,10 @@ const GlobalEntrepreneurshipFestival = () => {
       <PageInner>
         <AboutThisEvent>
           
-          <div>
+          
             {/* <Image src={ic_simple_icon} alt="simple icon" /> */}
             <h3>Join a Global Gathering of Visionaries</h3>
-          </div>
+          
           <p>
           This November, Nigeria will host the Global Entrepreneurship Festival, a premier event where global leaders, entrepreneurs, creatives, and investors converge to create, innovate, and inspire. It&apos;s a unique opportunity to immerse yourself in a dynamic environment of high-value networking and collaboration, all set against the vibrant backdrop of Nigerian culture and hospitality.
           </p>
@@ -172,10 +172,13 @@ const GlobalEntrepreneurshipFestival = () => {
           <h3>Travel as a VIP guest with Strategic Solutions Global and enjoy a curated blend of Nigerian culture, tourism, and exclusive access to high-value networking events.</h3>
 
         <Panelist>
-        <ImageWrapper>
+       
+
+      <ImageWrapper>
         <Image
-          src="/images/PanelistImg1.png"
+          src="/images/PanelistImg3.png"
           alt="Description"
+          style={{ borderRadius: '12px' }}
           width= {286.67}
           height= {321}
           priority
@@ -192,17 +195,17 @@ const GlobalEntrepreneurshipFestival = () => {
          priority
         />
       </ImageWrapper>
-
+        
       <ImageWrapper>
         <Image
-          src="/images/PanelistImg3.png"
+          src="/images/PanelistImg1.png"
           alt="Description"
-          style={{ borderRadius: '12px' }}
           width= {286.67}
           height= {321}
           priority
         />
       </ImageWrapper>
+
          </Panelist>
          </VIP> 
               <Perk> 
