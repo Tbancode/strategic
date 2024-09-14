@@ -230,7 +230,7 @@ export const Comment = styled.div`
    font-size: 24px;
    font-family: var(--font-satoshi);
    @media (max-width: 768px) {
-    margin-top: 100px;
+    margin-top: 150px;
     font-size: 16px;
     line-height: 30px;
     width:  98%;
@@ -628,7 +628,7 @@ export const Perk = styled.div`
         }
         .mobile{
           display: inline-flex;
-          margin: auto auto 100px auto;
+          margin: auto auto 150px auto;
           width: 100%;
           justify-content: center;
         }
@@ -751,7 +751,7 @@ export const Ticket = styled.div`
         }
         @media (max-width: 768px) {
           width: 95%;
-          height: 3500px;
+          height: 4000px;
           margin: 150px auto;
           h1{
             font-size: 20px;
@@ -762,7 +762,7 @@ export const Ticket = styled.div`
             width: 223px;
             height: 42px;
             font-size: 16px;
-            margin: auto auto 10px auto;
+            margin: auto;
             text-align: center;
             font-weight: 400;
             line-height: 20.8px;
@@ -780,8 +780,9 @@ export const TicketCard = styled.div`
           /* padding: 28px; */
           @media (max-width: 768px) {
           width: 98%;
-          height: 3164px;
+          height: 3264px;
           flex-direction: column;
+          align-items: flex-start;
           margin: auto;
 ;
           
@@ -837,7 +838,7 @@ export const Card = styled.div`
        }
        @media (max-width: 768px) {
         width: 90%;
-        height: 648px;
+        height: 700px;
         margin: auto auto 50px auto;
        
         h2{
