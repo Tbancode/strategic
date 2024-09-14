@@ -135,7 +135,7 @@ const LayoutContainer = styled.div`
 // Heading style
 const Top = styled.h1`
   color: var(--Gold, #ffbd00);
-  margin-top: -200px;
+  margin-top: -100px;
   width: 443.06px;
   font-size: 32px;
   height: 76px;
