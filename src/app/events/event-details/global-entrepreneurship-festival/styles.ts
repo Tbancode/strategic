@@ -243,7 +243,7 @@ export const Comment = styled.div`
     width: 70%;
   }
    @media (max-width: 768px) {
-    margin-top: 120px;
+    /* margin-top: 120px; */
     font-size: 16px;
     line-height: 30px;
     width:  98%;
@@ -570,7 +570,7 @@ export const VIP = styled.div`
        }
 
        h1{
-        font-size: 20px;
+        font-size: 32px;
         margin-bottom: 37px;
         width: 523.01px;
         height: 76px;
@@ -666,7 +666,7 @@ export const Perk = styled.div`
         }
         .mobile{
           display: inline-flex;
-          margin: auto auto 70px auto;
+          margin: auto;
           width: 100%;
           justify-content: center;
         }
