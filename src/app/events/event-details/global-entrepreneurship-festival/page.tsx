@@ -63,7 +63,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 //Working on timer
-const targetDate = "2024-11-11T00:00:00";
+const targetDate = "2024-11-18T00:00:00";
 
 
 
@@ -122,7 +122,7 @@ const GlobalEntrepreneurshipFestival = () => {
         </EventInfoBox>
         <EventInfoBox>
           <Image src={ic_event_calendar} alt="calendar icon" />
-          <p>November, 11th - 13th 2024</p>
+          <p>November, 18th - 26th 2024</p>
         </EventInfoBox>
         {/* Timer */}
         <CountdownTimer targetDate={targetDate} /> 

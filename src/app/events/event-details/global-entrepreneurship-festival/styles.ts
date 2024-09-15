@@ -220,17 +220,28 @@ export const AboutThisEvent = styled.div`
     p {
       max-width: 100%;
     }
+    img{
+      width: 80%;
+      height: 80%;
+
+
+
+    }
   }
 `;
 
 export const Comment = styled.div`
    text-align: center;
-   width: 769.43px;
-   margin: 77px auto;
+   /* width: 769.43px; */
+   width: 50%;
+   margin: 160px auto 50px auto;
    height: 90px;
    color: #ffffff;
    font-size: 24px;
    font-family: var(--font-satoshi);
+   @media (min-width: 768px) and (max-width: 900px) {
+    width: 70%;
+  }
    @media (max-width: 768px) {
     margin-top: 190px;
     font-size: 16px;
@@ -380,7 +391,7 @@ export const SpecialGuestsCtn = styled.div`
   width: 90%;
   max-width: 1000px;
   height: 471.72px;
-  margin: 217px auto 6.25rem;
+  margin: 190px auto 13.25rem;
   justify-content: center;
   align-content: center;
   
@@ -530,6 +541,13 @@ export const PayTicket = styled.button`
         a{
           text-decoration: none;
         }
+        @media (min-width: 769px) and (max-width: 1200px) {
+            width: 90%;
+            height: 47px;
+            padding: 10px;
+            margin: 50px 10px 10px;
+            
+          }
         @media (max-width: 768px) {
           width: 90%;
           font-size: 13.26px;
@@ -573,11 +591,17 @@ export const VIP = styled.div`
         font-weight: 400;
         margin-bottom: 100px;
        }
-       
+       @media (min-width: 900px) and (max-width: 1200px) {
+         width: 90%;
+        }
+       @media (min-width: 768px) and (max-width: 900px) {
+         width: 90%;
+        }
        
        @media (max-width: 768px) {
        margin-top: -350px;
-       width: 390px;
+       /* width: 390px; */
+       width: 100%;
        height: 700.45px;
        img{
         width: 244.94px;
@@ -602,16 +626,27 @@ export const VIP = styled.div`
 
 `
 export const Perk = styled.div`
+         width: 100%;
          background: radial-gradient(47.05% 50% at 50% 50%, rgba(26, 39, 201, 0.34) 0%, rgba(26, 39, 201, 0) 100%);
-         .web{
-          margin: auto auto 300px auto;
-         width: 902px;
-         height: 824px;
+         margin: auto;
          justify-content: center;
+         align-items: center;
+         align-content: center;
+         div{
+          width: 90%;
+          margin: auto;
+          justify-content: center;
+         .web{
+          margin: auto auto 200px 60px;
+         /* width: 902px; */
+         width: 92%;
+         height: 824px;
+         justify-content: center;}
          h2{
         font-size: 25px;
         line-height: 30px;
-        width: 426.42px;
+        /* width: 426.42px; */
+        width: 50%;
         height: 30px;
         color: var(--Gold, #ffbd00);
         text-align: center;
@@ -621,6 +656,7 @@ export const Perk = styled.div`
         /* margin-bottom: 60px; */
        }
       }
+    
       .mobile{
         display: none;
       }
@@ -679,6 +715,7 @@ export const ImageWrapper = styled.div`
 
 export const Immersion = styled.div`
        width: 700px;
+       width: 70%;
        height: 1200.48px;
        margin: auto;
        display: flex;
@@ -722,7 +759,8 @@ export const Immersion = styled.div`
 `
 
 export const Ticket = styled.div`
-        width: 1358px;
+        /* width: 1358px; */
+        width: 98%;
         height: 684px;
         margin: 200.11px auto 200px auto;
         justify-content: center;
@@ -751,6 +789,9 @@ export const Ticket = styled.div`
           margin-top: 60px;
           margin-bottom: 59px;
         }
+        @media (min-width: 769px) and (max-width: 1200px) {
+            height: 1000px;
+          }
         @media (max-width: 768px) {
           width: 95%;
           height: 3000px;
@@ -776,23 +817,29 @@ export const Ticket = styled.div`
 
 
 export const TicketCard = styled.div`
-          width: 1358px;
+          /* width: 1358px; */
+          width: 99%;
           display: flex;
+          margin: auto;
           flex-direction: row;
           justify-content: space-between;
           /* padding: 28px; */
+          @media (min-width: 769px) and (max-width: 1200px) {
+            height: 1800px;
+          }
           @media (max-width: 768px) {
           width: 98%;
           height: 2682px;
           flex-direction: column;
-          align-items: flex-start;
+          /* align-items: flex-start; */
           margin: auto;
 ;
           
         }
 `
 export const Card = styled.div`
-        width: 316px;
+        /* width: 316px; */
+        width: 24%;
         height: 613px;
         border-radius: 16px;
         /* margin-right: 28px; */
@@ -839,6 +886,15 @@ export const Card = styled.div`
         gap: 10px;
         font-family: var(--font-satoshi);
        }
+       @media (min-width: 769px) and (max-width: 1200px) {
+            height: 45%;
+            h2{
+              font-size: 18px;
+            }
+            h4{
+              font-size: 12px;
+            }
+          }
        @media (max-width: 768px) {
         width: 90%;
         height: 640px;
@@ -849,7 +905,7 @@ export const Card = styled.div`
           width: 260px;
           height: 24px;
           text-align: left;
-          margin: 40px auto 0px 35px;
+          margin: 40px auto 0px 32px;
           line-height: 33.2px;
         }
         h4{
@@ -857,7 +913,7 @@ export const Card = styled.div`
           width: 280px;
           height: 24px;
           text-align: left;
-          margin-left: 35px;
+          margin-left: 32px;
           margin-top: 8px;
           margin-bottom: 30px;
           line-height: 24px;
@@ -867,7 +923,7 @@ export const Card = styled.div`
           width: 139px;
           height: 29px;
           text-align: left;
-          margin-left: 35px;
+          margin-left: 32px;
           margin-bottom: 30px;
           /* margin: 5px auto 25px auto; */
           line-height: 24px;
@@ -912,8 +968,16 @@ export const Schedule = styled.div`
 
         }
     }
-    @media (max-width: 768px) {
+    @media (min-width: 769px) and (max-width: 1200px) {
       margin-top: 30px;
+      width: 100%;
+      div{
+        width: 80%;
+        height: 162px;
+      }
+  }
+    @media (max-width: 768px) {
+      margin-top: 100px;
       width: 100%;
       div{
         width: 95%;

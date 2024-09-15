@@ -6,13 +6,18 @@ import styled from 'styled-components';
 
 
 const Container = styled.div`
-  width: 1000px;
-  height: 740px;
+  /* width: 1000px; */
+  width: 100%;
+  /* height: 740px; */
+  height: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: 768px) and (max-width: 900px) {
+    width: 90%;
+  }
   @media (max-width: 768px) {
       width: 390px;
       height: 965.99px;
@@ -86,7 +91,18 @@ const H55 = styled.h5`
 `
 
 const Contain = styled.div`
-    margin-top: 170px;
+    /* margin-top: 170px; */
+    width: 66%;
+  /* height: 740px; */
+  height: 70%;
+  margin: 170px auto auto;
+  justify-content: space-between;
+  @media (min-width: 768px) and (max-width: 900px) {
+    width: 85%;
+  }
+  @media(max-width: 768px){
+
+  }
    
 `
 

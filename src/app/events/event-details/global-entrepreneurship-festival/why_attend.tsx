@@ -20,7 +20,7 @@ import styled from 'styled-components';
 const attend = [{
     id: 1,
     svg: participate,
-    text:  'Participate in hands-on sessions withindustry pioneers and entrepreneurs.' 
+    text:  'Participate in hands-on sessions with industry pioneers and entrepreneurs.' 
 },
 {
     id: 2,
@@ -54,13 +54,21 @@ const attend = [{
 
 // Container for the map elements
 const MapContainer = styled.div`
-  width: 833px;
+  /* width: 833px; */
+  width: 63%;
   height: 591px;
   justify-content: space-between;
   margin: 0 auto; 
   display: flex;
   /* gap: 135px; */
   flex-wrap: wrap; 
+  @media (min-width: 900px) and (max-width: 1200px) {
+    width: 80%;
+    
+  }
+  @media (min-width: 768px) and (max-width: 900px) {
+    width: 95%;
+  }
   @media (max-width: 768px) {
     width: 364.39px;
     height: 1400.29px;
@@ -93,7 +101,7 @@ const MapElement = styled.div`
     line-height: 24px;
     text-align: center;
     height: 76px;
-    width: 443px;
+    width: 349px;
   }
   @media (max-width: 768px) {
     width: 364.39px;
@@ -117,13 +125,17 @@ const MapElement = styled.div`
 
 // Container for the entire layout
 const LayoutContainer = styled.div`
-  width: 1129px;
+  /* width: 1129px; */
+  width: 86%;
   height: 727px;
   margin: 0 auto; // Center horizontally
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (min-width: 768px) and (max-width: 1200px) {
+    width: 100%;
+  }
   @media (max-width: 768px) {
     width: 100%;
     height: 1112.52px;
@@ -143,6 +155,9 @@ const Top = styled.h1`
   text-align: center;
   font-family: var(--font-lora);
   margin-bottom: 60px; 
+  @media (min-width: 768px) and (max-width: 1200px) {
+    margin-top: 50px;
+  }
   @media (max-width: 768px) {
     font-size: 20px;
     margin-top: 300px;
