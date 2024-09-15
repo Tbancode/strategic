@@ -135,13 +135,14 @@ const LayoutContainer = styled.div`
   justify-content: center;
   @media (min-width: 768px) and (max-width: 1200px) {
     width: 100%;
-    margin-top: 200px;
+    margin-top: 50px;
+    
   }
   @media (max-width: 768px) {
     width: 100%;
     height: 1112.52px;
-    margin-top: 250px;
-    margin-bottom: 200px;
+    margin-top: 70px;
+    margin-bottom: 100px;
   }
 
 `;

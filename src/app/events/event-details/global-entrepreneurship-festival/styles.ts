@@ -666,7 +666,7 @@ export const Perk = styled.div`
         }
         .mobile{
           display: inline-flex;
-          margin: auto auto 120px auto;
+          margin: auto auto 70px auto;
           width: 100%;
           justify-content: center;
         }
@@ -740,7 +740,7 @@ export const Immersion = styled.div`
        }
        @media (max-width: 768px) {
          width: 97%;
-         height: 663px;
+         height: 693px;
          h1{
           font-size: 20px;
           line-height: 24px;
@@ -790,7 +790,8 @@ export const Ticket = styled.div`
           margin-bottom: 59px;
         }
         @media (min-width: 769px) and (max-width: 1200px) {
-            height: 1000px;
+            height: 900px;
+
           }
         @media (max-width: 768px) {
           width: 95%;
@@ -898,7 +899,7 @@ export const Card = styled.div`
        @media (max-width: 768px) {
         width: 90%;
         height: 640px;
-        margin: auto auto 50px auto;
+        margin: auto;
        
         h2{
           font-size: 20px;
