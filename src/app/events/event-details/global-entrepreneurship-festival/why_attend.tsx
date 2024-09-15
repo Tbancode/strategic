@@ -106,7 +106,7 @@ const MapElement = styled.div`
   @media (max-width: 768px) {
     width: 364.39px;
     height: 139.88px;
-    margin: auto auto 30px auto;
+    margin: 30px auto 30px auto;
     Image{
       width: 81px;
       height: 81px;
@@ -143,7 +143,7 @@ const LayoutContainer = styled.div`
     height: 1112.52px;
     align-content: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 120px;
   }
 
@@ -159,14 +159,14 @@ const Top = styled.h1`
   text-align: center;
   font-family: var(--font-lora);
   margin-bottom: 60px; 
-  @media (min-width: 768px) and (max-width: 1200px) {
+  @media (min-width: 769px) and (max-width: 1200px) {
     margin-top: 50px;
   }
   @media (max-width: 768px) {
     font-size: 20px;
     /* margin-top: 300px; */
     /* margin-top: 100px; */
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     width: 336px;
     height: 48px;
   }

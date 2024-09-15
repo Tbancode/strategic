@@ -239,11 +239,11 @@ export const Comment = styled.div`
    color: #ffffff;
    font-size: 24px;
    font-family: var(--font-satoshi);
-   @media (min-width: 768px) and (max-width: 900px) {
+   @media (min-width: 769px) and (max-width: 900px) {
     width: 70%;
   }
    @media (max-width: 768px) {
-    /* margin-top: 120px; */
+    margin-top: 120px;
     font-size: 16px;
     line-height: 30px;
     width:  98%;
