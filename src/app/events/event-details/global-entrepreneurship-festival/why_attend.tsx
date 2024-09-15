@@ -143,7 +143,7 @@ const LayoutContainer = styled.div`
     height: 1112.52px;
     align-content: center;
     justify-content: center;
-    margin-top: 170px;
+    margin-top: 100px;
     margin-bottom: 20px;
   }
 
@@ -166,7 +166,7 @@ const Top = styled.h1`
     font-size: 20px;
     /* margin-top: 300px; */
     margin-top: 100px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
     width: 336px;
     height: 48px;
   }

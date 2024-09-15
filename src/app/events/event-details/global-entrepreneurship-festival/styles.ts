@@ -243,7 +243,7 @@ export const Comment = styled.div`
     width: 70%;
   }
    @media (max-width: 768px) {
-    /* margin-top: 120px; */
+    margin-top: 120px;
     font-size: 16px;
     line-height: 30px;
     width:  98%;
@@ -753,6 +753,7 @@ export const Immersion = styled.div`
          }
          .Imobile{
           display: inline-block;
+          margin-bottom: 70px;
          }
 
   }
