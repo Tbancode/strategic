@@ -243,7 +243,7 @@ export const Comment = styled.div`
     width: 70%;
   }
    @media (max-width: 768px) {
-    margin-top: 120px;
+    /* margin-top: 120px; */
     font-size: 16px;
     line-height: 30px;
     width:  98%;
@@ -978,8 +978,8 @@ export const Schedule = styled.div`
       }
   }
     @media (max-width: 768px) {
-      margin-top: -50px;
-      margin-bottom: 30px;
+      margin-top: -100px;
+      margin-bottom: 50px;
       width: 100%;
       div{
         width: 95%;

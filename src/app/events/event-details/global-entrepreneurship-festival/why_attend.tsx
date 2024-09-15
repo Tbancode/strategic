@@ -72,7 +72,7 @@ const MapContainer = styled.div`
   @media (max-width: 768px) {
     width: 364.39px;
     height: 1400.29px;
-    margin: 10px auto 300px auto;
+    margin: 5px auto 100px auto;
     flex-direction: column;
     justify-content: center;
   }
@@ -141,8 +141,10 @@ const LayoutContainer = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     height: 1112.52px;
+    align-content: center;
+    justify-content: center;
     margin-top: 170px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
 
 `;
@@ -163,6 +165,7 @@ const Top = styled.h1`
   @media (max-width: 768px) {
     font-size: 20px;
     /* margin-top: 300px; */
+    margin-top: 100px;
     margin-bottom: 70px;
     width: 336px;
     height: 48px;
