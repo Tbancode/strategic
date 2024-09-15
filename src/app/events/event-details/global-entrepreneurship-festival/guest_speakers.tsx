@@ -103,7 +103,7 @@ const Contain = styled.div`
   }
   @media(max-width: 768px){
       width: 390px;
-      margin: 100px auto auto;
+      margin: -80px auto auto;
   }
    
 `

@@ -243,7 +243,7 @@ export const Comment = styled.div`
     width: 70%;
   }
    @media (max-width: 768px) {
-    margin-top: 190px;
+    margin-top: 120px;
     font-size: 16px;
     line-height: 30px;
     width:  98%;
@@ -796,7 +796,7 @@ export const Ticket = styled.div`
         @media (max-width: 768px) {
           width: 95%;
           height: 3000px;
-          margin: 50px auto;
+          margin: 120px auto;
           h1{
             font-size: 20px;
             line-height: 24px;
@@ -978,7 +978,8 @@ export const Schedule = styled.div`
       }
   }
     @media (max-width: 768px) {
-      margin-top: 100px;
+      margin-top: -50px;
+      margin-bottom: 30px;
       width: 100%;
       div{
         width: 95%;

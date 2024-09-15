@@ -141,7 +141,7 @@ const LayoutContainer = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     height: 1112.52px;
-    margin-top: 70px;
+    margin-top: 170px;
     margin-bottom: 100px;
   }
 
@@ -162,8 +162,8 @@ const Top = styled.h1`
   }
   @media (max-width: 768px) {
     font-size: 20px;
-    margin-top: 300px;
-    margin-bottom: 10px;
+    /* margin-top: 300px; */
+    margin-bottom: 70px;
     width: 336px;
     height: 48px;
   }
