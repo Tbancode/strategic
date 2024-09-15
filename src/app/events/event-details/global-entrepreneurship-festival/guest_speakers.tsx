@@ -19,7 +19,7 @@ const Container = styled.div`
     width: 90%;
   }
   @media (max-width: 768px) {
-      width: 390px;
+      width: 100%;
       height: 965.99px;
       }
 `;
@@ -33,8 +33,12 @@ const MapElement = styled.div`
   align-items: center;
   justify-content: space-between;
   @media (max-width: 768px) {
-      width: 191.25px;
+      /* width: 191.25px; */
+      width: 48%;
       height: 248.63px;
+      }
+      @media (max-width: 360px){
+        width: 50%;
       }
 `;
 
@@ -42,6 +46,8 @@ const Image = styled.img`
   width: 100%;
   height: 283.33px;
   object-fit: cover;
+  @media (max-width: 360px) {
+    width: 100%}
 `;
 
 const H5 = styled.h5`
@@ -52,9 +58,14 @@ const H5 = styled.h5`
   color: var(--White, #FFFFFF);
   font-family: var(--font-lora);
   @media (max-width: 768px) {
-      width: 190px;
+      /* width: 190px; */
+      width: 100%;
+      /* margin-bottom: 10px; */
       height: 22px;
       font-size: 14px;
+      }
+      @media (max-width: 360px) {
+         margin-bottom: 7px;
       }
   
 `;
@@ -102,7 +113,7 @@ const Contain = styled.div`
     margin: auto;
   }
   @media(max-width: 768px){
-      width: 390px;
+      width: 97%;
       margin: -80px auto auto;
   }
    
