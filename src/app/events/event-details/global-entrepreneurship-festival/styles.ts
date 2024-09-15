@@ -431,8 +431,8 @@ export const SpecialGuestsCtn = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin-top: 150px;
-    margin-bottom: 1.98rem;
+    margin-top: 120px;
+    /* margin-bottom: 1.98rem; */
     width: 100%;
 
     header {
@@ -517,7 +517,7 @@ export const LinkBtn = styled.button`
         width: 262px;
         height: 60px;
         font-size: 15px;
-        margin-top: 30px;
+        margin-top: 10px;
         }
 ` 
 

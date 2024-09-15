@@ -99,9 +99,11 @@ const Contain = styled.div`
   justify-content: space-between;
   @media (min-width: 768px) and (max-width: 900px) {
     width: 85%;
+    margin: auto;
   }
   @media(max-width: 768px){
-
+      width: 390px;
+      margin: 100px auto auto;
   }
    
 `
