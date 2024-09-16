@@ -100,9 +100,16 @@ const MapElement = styled.div`
     font-weight: 400;
     line-height: 24px;
     text-align: center;
+    margin-top: 20px;
     height: 76px;
     width: 349px;
   }
+  /* @media (min-width: 769px) and (max-width: 1300px) {
+    h3{
+      margin-top: 20px;
+    }  */
+    
+   
   @media (max-width: 768px) {
     width: 364.39px;
     height: 139.88px;
@@ -133,7 +140,7 @@ const LayoutContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media (min-width: 768px) and (max-width: 1200px) {
+  @media (min-width: 769px) and (max-width: 1300px) {
     width: 100%;
     margin-top: 50px;
     

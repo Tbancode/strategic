@@ -35,8 +35,8 @@ export const PageHeroSection = styled.div`
 
   & > p {
     max-width: 25.375rem;
-    font-family: var(--font-lora);
-    font-size: 1.25rem;
+    font-family: var(--font-satoshi);
+    font-size: 1.5rem;
     line-height: 1.5rem;
     margin-bottom: 2.5rem;
   }

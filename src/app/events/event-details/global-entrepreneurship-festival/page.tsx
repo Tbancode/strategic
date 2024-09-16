@@ -114,7 +114,7 @@ const GlobalEntrepreneurshipFestival = () => {
           Global <span>Entrepreneurship</span> Festival
         </h1>
         <p>
-          Vent with big names from different sector here for Entrepreneurs, Leaders, YOU.
+        Join a global gathering of visionaries
         </p>
         <EventInfoBox>
           <Image src={ic_event_location} alt="location icon" />
