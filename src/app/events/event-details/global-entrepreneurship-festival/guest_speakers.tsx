@@ -17,6 +17,7 @@ const Container = styled.div`
   align-items: center;
   @media (min-width: 768px) and (max-width: 900px) {
     width: 90%;
+    height: 100%;
   }
   @media (max-width: 768px) {
       width: 100%;
@@ -38,7 +39,7 @@ const MapElement = styled.div`
       height: 248.63px;
       }
       @media (max-width: 360px){
-        width: 50%;
+        width: 48%;
       }
 `;
 
@@ -108,6 +109,7 @@ const Contain = styled.div`
   height: 70%;
   margin: 170px auto auto;
   justify-content: space-between;
+  
   @media (min-width: 768px) and (max-width: 900px) {
     width: 85%;
     margin: auto;

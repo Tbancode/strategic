@@ -63,7 +63,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 //Working on timer
-const targetDate = "2024-11-18T00:00:00";
+const targetDate = "2024-11-22T00:00:00";
 
 
 
@@ -118,11 +118,11 @@ const GlobalEntrepreneurshipFestival = () => {
         </p>
         <EventInfoBox>
           <Image src={ic_event_location} alt="location icon" />
-          <p>Entrepreneurship Village, Akure, Nigeria</p>
+          <p>Lagos & Akure, Nigeria</p>
         </EventInfoBox>
         <EventInfoBox>
           <Image src={ic_event_calendar} alt="calendar icon" />
-          <p>November, 18th - 26th 2024</p>
+          <p>November, 22nd - 24th 2024</p>
         </EventInfoBox>
         {/* Timer */}
         <CountdownTimer targetDate={targetDate} /> 
@@ -149,21 +149,18 @@ const GlobalEntrepreneurshipFestival = () => {
 
       <PageInner>
         <AboutThisEvent>
-          
-          
-            {/* <Image src={ic_simple_icon} alt="simple icon" /> */}
-            <h3>Join a Global Gathering of Visionaries</h3>
-          
-          <p>
-          This November, Nigeria will host the Global Entrepreneurship Festival, a premier event where global leaders, entrepreneurs, creatives, and investors converge to create, innovate, and inspire. It&apos;s a unique opportunity to immerse yourself in a dynamic environment of high-value networking and collaboration, all set against the vibrant backdrop of Nigerian culture and hospitality.
-          </p>
-          <Image
+          {/* <Image src={ic_simple_icon} alt="simple icon" /> */}
+            <Image
                src="/images/aboutevent_image.png"
                alt="Description"
                width={892.99}
                height={496.93}
               //  priority
                />
+          <p>
+          This November, Nigeria will host the Global Entrepreneurship Festival, a premier event where global leaders, entrepreneurs, creatives, and investors converge to create, innovate, and inspire. It&apos;s a unique opportunity to immerse yourself in a dynamic environment of high-value networking and collaboration, all set against the vibrant backdrop of Nigerian culture and hospitality.
+          </p>
+          
         </AboutThisEvent>
       </PageInner>
             

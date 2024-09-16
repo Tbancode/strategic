@@ -150,6 +150,7 @@ export const AboutThisEvent = styled.div`
   width: 80%;
   max-width: 1130px;
   margin: 0 auto;
+  height: 693.91px;
   justify-content: center;
   gap: 1.25rem;
   align-items: center;
@@ -183,7 +184,8 @@ export const AboutThisEvent = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-bottom: 3.75rem;
+    margin-top: 60px;
+    /* margin-bottom: 3.75rem; */
   }
 
   @media (max-width: 768px) {
@@ -755,6 +757,7 @@ export const Immersion = styled.div`
           display: inline-block;
           margin-bottom: 70px;
          }
+         
 
   }
 `
@@ -791,7 +794,8 @@ export const Ticket = styled.div`
           margin-bottom: 59px;
         }
         @media (min-width: 769px) and (max-width: 1200px) {
-            height: 900px;
+            height: 1400px;
+            width: 70%;
 
           }
         @media (max-width: 768px) {
@@ -827,7 +831,9 @@ export const TicketCard = styled.div`
           justify-content: space-between;
           /* padding: 28px; */
           @media (min-width: 769px) and (max-width: 1200px) {
-            height: 1800px;
+            height: 1300px;
+            width: 95%;
+            flex-wrap: wrap;
           }
           @media (max-width: 768px) {
           width: 98%;
@@ -889,7 +895,8 @@ export const Card = styled.div`
         font-family: var(--font-satoshi);
        }
        @media (min-width: 769px) and (max-width: 1200px) {
-            height: 45%;
+            /* height: 45%; */
+            width: 45%;
             h2{
               font-size: 18px;
             }
