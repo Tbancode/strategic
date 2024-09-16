@@ -192,6 +192,8 @@ const ImageWrapper = styled.div<{ isSelected: boolean }>`
     
     p{
       font-size: 8px;
+      margin-top: 14px;
+      margin-bottom: 8px;
     }
   }
 
