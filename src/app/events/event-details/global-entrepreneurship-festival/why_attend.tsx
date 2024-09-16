@@ -142,7 +142,7 @@ const LayoutContainer = styled.div`
   justify-content: center;
   @media (min-width: 769px) and (max-width: 1300px) {
     width: 100%;
-    margin-top: 50px;
+    margin-top: -120px;
     
   }
   @media (max-width: 768px) {

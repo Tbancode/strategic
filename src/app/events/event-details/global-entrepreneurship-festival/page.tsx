@@ -308,7 +308,7 @@ const GlobalEntrepreneurshipFestival = () => {
                      {/* <Link href={`/global-entrepreneurship-festival/book-a-seat?amount=${selectedAmount}`}></Link> */}
                </Card>
                <Card >
-                   <h2>VIP Platinum Experience</h2>
+                   <h2>VIP Experience</h2>
                    <h4>(Standard Airfare Included)</h4>
                     <h3 style={{marginTop: '20px'}}>$7,000</h3>
                    <p>{Select} Personal Government Protocol Officer</p>
