@@ -55,7 +55,7 @@ const attend = [{
 // Container for the map elements
 const MapContainer = styled.div`
   /* width: 833px; */
-  width: 63%;
+  width: 72%;
   height: 591px;
   justify-content: space-between;
   margin: 0 auto; 
