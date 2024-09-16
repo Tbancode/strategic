@@ -164,12 +164,12 @@ const ImageWrapper = styled.div<{ isSelected: boolean }>`
     display: block;
     width: 150px;
     height: 150px;
-  
-    img:hover{
-      width: 152px;
-    height: 152px;
-    }
   }
+   img:hover{
+    transform: scale(1.009);
+    transition: transform 0.5s ease;
+    }
+  
 
   p {
     color: #ffffff;
@@ -186,8 +186,8 @@ const ImageWrapper = styled.div<{ isSelected: boolean }>`
       height: 70px;
     }
       img:hover{
-        width: 70.5px;
-    height: 70.5px;
+        transform: scale(1.02);
+    transition: transform 0.5s ease;
       }
     
     p{
