@@ -157,7 +157,10 @@ export const AboutThisEvent = styled.div`
   margin-bottom: 6.25rem;
   /* background: radial-gradient(47.05% 50% at 50% 50%, rgba(26, 39, 201, 0.34) 0%, rgba(26, 39, 201, 0) 100%); */
 
-
+   video{
+      width: 800px;
+      
+   }
   /* div {
     display: flex;
     align-items: center;
@@ -205,7 +208,7 @@ export const AboutThisEvent = styled.div`
       gap: 1rem;
       max-width: 100%;
     }
-    img{
+    video{
       width: 389.95px;
       height: 217px;
 
@@ -222,7 +225,7 @@ export const AboutThisEvent = styled.div`
     p {
       max-width: 100%;
     }
-    img{
+    video{
       width: 80%;
       height: 80%;
 

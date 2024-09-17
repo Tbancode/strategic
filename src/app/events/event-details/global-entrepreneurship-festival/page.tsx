@@ -150,13 +150,16 @@ const GlobalEntrepreneurshipFestival = () => {
       <PageInner>
         <AboutThisEvent>
           {/* <Image src={ic_simple_icon} alt="simple icon" /> */}
-            <Image
+            {/* <Image
                src="/images/aboutevent_image.png"
                alt="Description"
                width={892.99}
                height={496.93}
               //  priority
-               />
+               /> */}
+               <video controls autoPlay muted loop playsInline>
+                <source src="/videos/global.mp4" type="video/mp4" />
+               </video>
           <p>
           This November, Nigeria will host the Global Entrepreneurship Festival, a premier event where global leaders, entrepreneurs, creatives, and investors converge to create, innovate, and inspire. It&apos;s a unique opportunity to immerse yourself in a dynamic environment of high-value networking and collaboration, all set against the vibrant backdrop of Nigerian culture and hospitality.
           </p>

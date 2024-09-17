@@ -72,7 +72,7 @@ const Amount = styled.p`
 const Button = styled(Link)`
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: var(--blue);
+  background-color: var(--Charcoal);
   color: var(--White);
   font-family: var(--font-satoshi);
   font-size: 1rem;
