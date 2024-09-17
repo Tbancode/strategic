@@ -67,7 +67,7 @@ const MapContainer = styled.div`
     
   }
   @media (min-width: 768px) and (max-width: 900px) {
-    width: 95%;
+    width: 80%;
   }
   @media (max-width: 768px) {
     width: 364.39px;
