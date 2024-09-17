@@ -313,7 +313,7 @@ const GlobalEntrepreneurshipFestival = () => {
       "VIP Nightlife Access",
       "Private Networking Events High-Net-Worth Dinners",
       "VIP Lounge Access",], '(No Standard Airfare Included)')}> GET TICKET</a></PayTicket>
-                     {/* <Link href={`/global-entrepreneurship-festival/book-a-seat?amount=${selectedAmount}`}></Link> */}
+                     
                </Card>
                <Card >
                    <h2>VIP Experience</h2>
