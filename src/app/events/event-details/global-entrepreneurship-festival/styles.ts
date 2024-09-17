@@ -161,6 +161,20 @@ export const AboutThisEvent = styled.div`
       width: 800px;
       
    }
+   .mute-btn {
+  position: fixed; /* Makes the button stick on the screen */
+  bottom: 20px; /* Positioning the button at the bottom */
+  right: 20px; /* Positioning the button to the right */
+  padding: 2px 4px;
+  /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background */
+  background: transparent;
+  fill: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 1000; /* Ensures it stays on top */
+}
+
   /* div {
     display: flex;
     align-items: center;

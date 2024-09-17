@@ -59,7 +59,7 @@ import {
 
 import SlideCtnWrapper from '@/components/UI/Event/Panelists/Slider/SlideCtnWrapper';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useRef} from 'react';
 import styled from 'styled-components';
 
 //Working on timer
@@ -83,15 +83,17 @@ const GlobalEntrepreneurshipFestival = () => {
     console.log(`Price saved: ${price}, Content saved: ${cardContent}`);
   };
 
-  // const handleCardClick = (price: string, title: string, cardContent: string[], subtitle: string) => {
-  //   if (typeof window !== 'undefined') {
-  //     localStorage.setItem('selectedPrice', price); // Store the price in localStorage
-  //     localStorage.setItem('selectedContent', JSON.stringify(cardContent)); // Store the content in localStorage
-  //     localStorage.setItem('selectedCardTitle', title);
-  //     localStorage.setItem('selectedCardSubtitle', subtitle);
-  //     console.log(`Price saved: ${price}, Content saved: ${cardContent}`);
-  //   }
-  // };
+  const [muted, setMuted] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !muted;
+      setMuted(!muted);
+    }
+  };
+
+
   
 
   const Select = (
@@ -157,9 +159,12 @@ const GlobalEntrepreneurshipFestival = () => {
                height={496.93}
               //  priority
                /> */}
-               <video controls autoPlay muted loop playsInline>
+               <video ref={videoRef} controls autoPlay muted={muted} loop playsInline>
                 <source src="/videos/global.mp4" type="video/mp4" />
                </video>
+               <button className="mute-btn" onClick={toggleMute}>
+                    {muted ? '🔈' : '🔊'}
+                </button>
           <p>
           This November, Nigeria will host the Global Entrepreneurship Festival, a premier event where global leaders, entrepreneurs, creatives, and investors converge to create, innovate, and inspire. It&apos;s a unique opportunity to immerse yourself in a dynamic environment of high-value networking and collaboration, all set against the vibrant backdrop of Nigerian culture and hospitality.
           </p>
