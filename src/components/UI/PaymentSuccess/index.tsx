@@ -15,7 +15,7 @@ const PaymentSuccess = ({ amount }: { amount: string }) => {
       <MessageContainer>
         <Title>Payment Successful!</Title>
         <Amount>You have successfully paid ${amount}</Amount>
-        <Button href="/">Go to Home</Button>
+        <Button href="/events/event-details/global-entrepreneurship-festival">Go to Home</Button>
       </MessageContainer>
       <Footer />
     </Container>
@@ -52,7 +52,7 @@ const MessageContainer = styled.div`
   text-align: center;
   animation: ${fadeIn} 0.5s ease-in-out;
   max-width: 50%;
-  margin: 2rem auto;
+  margin: 12rem auto;
 `;
 
 const Title = styled.h1`

@@ -200,7 +200,8 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
       elements,
       clientSecret,
       confirmParams: {
-        return_url: `${baseDomain}/payment-success?amount=${amount}`,
+        return_url: `${window.location.origin}/payment-success`,
+        receipt_email: email,
         payment_method_data: {
           billing_details: {
             name: name,
@@ -217,22 +218,7 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
 
     setLoading(false);
   };
-  const paymentElementOptions = {
-    layout: "tabs",
-    style: {
-      base: {
-        color: '#32325d',
-        fontSize: '10px',
-        fontFamily: 'Arial, sans-serif',
-        '::placeholder': {
-          color: '#aab7c4',
-        },
-      },
-      invalid: {
-        color: '#fa755a',
-      },
-    },
-  };
+  
 
   if (!clientSecret || !stripe || !elements) {
     return <SpinnerComponent />;
