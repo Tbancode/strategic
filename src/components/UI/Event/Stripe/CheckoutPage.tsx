@@ -214,7 +214,34 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
 
     if (error) {
       setErrorMessage(error.message);
+    } else {
+      // Send additional data to Google Sheets
+      const numericAmount = amount.toFixed(2); // Ensure amount has two decimal places
+
+      const formData = new FormData();
+      formData.append('Name', name);
+      formData.append('Email', email);
+      formData.append('Phone', phone);
+      formData.append('Amount', numericAmount);
+
+      try {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbyjNv13r4zPEg4DeMamCHPEZYX8J6EtuDGBf0t5PUUhgYMKlV-i9i2Vuop-p-SYizVYJA/exec", {
+          method: 'POST',
+          body: formData,
+        });
+
+        if (response.ok) {
+          console.log('Data successfully sent to Google Sheets');
+        } else {
+          setErrorMessage('Failed to send data to Google Sheets');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        setErrorMessage('An error occurred');
+      }
     }
+        
+    
 
     setLoading(false);
   };
@@ -229,6 +256,7 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
       <label htmlFor="name">Names</label>
       <input
         id="name"
+        name='Name'
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
@@ -238,6 +266,7 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
       <label htmlFor="email">Email</label>
       <input
         id="email"
+        name='Email'
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
@@ -248,6 +277,7 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
       <input
         id="phone"
         type="tel"
+        name='Phone'
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
         required
