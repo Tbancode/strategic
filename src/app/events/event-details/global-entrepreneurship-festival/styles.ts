@@ -526,7 +526,7 @@ export const LinkBtn = styled.button`
         border: 2px solid #D9D9E3;
         width: 322px;
         height: 60px;
-        margin: 54.99px auto 90px auto ;
+        margin: 34.99px auto 200px auto ;
         padding: 17px 33px;
         cursor: pointer;
         a{

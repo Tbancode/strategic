@@ -10,7 +10,7 @@ const BookASeat = () => {
       <Header />
       <BookASeatHeroSection>
         <header>
-          <h1>book a seat</h1>
+          <h1>BOOK EXPERIENCE</h1>
         </header>
       </BookASeatHeroSection>
       

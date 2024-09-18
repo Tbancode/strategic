@@ -312,7 +312,7 @@ const GlobalEntrepreneurshipFestival = () => {
       "Exclusive Tourism Activities in Lagos",
       "VIP Nightlife Access",
       "Private Networking Events High-Net-Worth Dinners",
-      "VIP Lounge Access",], '(No Standard Airfare Included)')}> GET TICKET</a></PayTicket>
+      "VIP Lounge Access",], '(No Standard Airfare Included)')}> BOOK EXPERIENCE</a></PayTicket>
                      
                </Card>
                <Card >
@@ -340,7 +340,7 @@ const GlobalEntrepreneurshipFestival = () => {
       "VIP Nightlife Access",
       "Private Networking Events High-Net-Worth Dinners",
       "VIP Lounge Access",
-    ], '(Standard Airfare Included)')}> GET TICKET</a></PayTicket>        
+    ], '(Standard Airfare Included)')}>BOOK EXPERIENCE</a></PayTicket>        
                     </Card>
                     
                <Card style={{background: 'linear-gradient(180deg, rgba(232, 160, 53, 0.41) -44.05%, rgba(192, 146, 78, 0) 93.75%)'}}>
@@ -351,9 +351,8 @@ const GlobalEntrepreneurshipFestival = () => {
                    <p>{Select} 2 Custom Tailor Made Outfits</p>
                    <p>{Select} Access Wholesale Outsourcing <br /> Investment Opportunity</p>
                    <p>{Select} Hair & Beauty Care</p>
-                   <p>{Select} ⁠Private Spa/Wellness Package</p>
-                   <p>{Select} 5 Star Accommodations</p>
-                   <p style={{marginBottom: '140px'}}>{Select} Exclusive Tourism Activities in Lagos</p>
+                   <p style={{marginBottom: '203px'}}>{Select} ⁠Private Spa/Wellness Package</p>
+                  
                    {/* {Pay} */}
                    <PayTicket ><a href="global-entrepreneurship-festival/book-a-seat" onClick={() => handleCardClick('$6,800','VIP Platinum Experience', [
       "VIP Experience Perks",
@@ -362,7 +361,7 @@ const GlobalEntrepreneurshipFestival = () => {
       "Hair & Beauty Care",
       "⁠Private Spa/Wellness Package",
       " 5 Star Accommodations",
-      "Exclusive Tourism Activities in Lagos"], '(No Airfare Included)')}>GET TICKET</a></PayTicket>
+      "Exclusive Tourism Activities in Lagos"], '(No Airfare Included)')}>BOOK EXPERIENCE</a></PayTicket>
                </Card>
                <Card style={{background: 'linear-gradient(180deg, rgba(232, 160, 53, 0.41) -44.05%, rgba(192, 146, 78, 0) 93.75%)'}}>
                    <h2>VIP Platinum Experience</h2>
@@ -372,9 +371,7 @@ const GlobalEntrepreneurshipFestival = () => {
                    <p>{Select} 2 Custom Tailor Made Outfits</p>
                    <p>{Select} Access Wholesale Outsourcing <br /> Investment Opportunity</p>
                    <p>{Select} Hair & Beauty Care</p>
-                   <p>{Select} ⁠Private Spa/Wellness Package</p>
-                   <p>{Select} 5 Star Accommodations</p>
-                   <p style={{marginBottom: '140px'}}>{Select} Exclusive Tourism Activities in Lagos</p>
+                   <p style={{marginBottom: '203px'}}>{Select} ⁠Private Spa/Wellness Package</p>
                    <PayTicket ><a href="global-entrepreneurship-festival/book-a-seat" onClick={() => handleCardClick('$8,700','VIP Platinum Experience', [
     "VIP Experience Perks",
     "2 Custom Tailor Made Outfits",
@@ -382,7 +379,7 @@ const GlobalEntrepreneurshipFestival = () => {
     "Hair & Beauty Care",
     "⁠Private Spa/Wellness Package",
     " 5 Star Accommodations",
-    "Exclusive Tourism Activities in Lagos"], '(Standard Airfare Included)')} >GET TICKET</a></PayTicket>
+    "Exclusive Tourism Activities in Lagos"], '(Standard Airfare Included)')} >BOOK EXPERIENCE</a></PayTicket>
                </Card>
                
               </TicketCard>

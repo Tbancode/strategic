@@ -130,7 +130,7 @@ const ImageSelectionComponent: React.FC = () => {
         </ImagesWrapper>
       )}
 
-      <LinkBtn onClick={handleButtonClick}>
+      <LinkBtn style={{marginBottom: '75px'}} onClick={handleButtonClick}>
         {showImages ? "SCHEDULE A CALL" : "SCHEDULE A CALL"}
       </LinkBtn>
       {alertMessage && <Alert>{alertMessage}</Alert>}
