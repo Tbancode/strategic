@@ -89,9 +89,16 @@ const MapElement = styled.div`
   width: 349px;
   height: 149px;
   
+ 
   Image{
     margin-bottom: 20px;
+    
   }
+  &:hover{
+    transform: scale(1.04);
+    transition: transform 0.5s ease;
+    
+    }
 
   h3{
     color: #ffffff;

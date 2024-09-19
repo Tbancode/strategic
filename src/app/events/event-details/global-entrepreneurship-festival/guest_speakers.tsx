@@ -47,6 +47,13 @@ const Image = styled.img`
   width: 100%;
   height: 283.33px;
   object-fit: cover;
+  &:hover{
+    transform: scale(1.04);
+    transition: transform 0.5s ease;
+    /* color: var(--Blue);
+    background-color: var(--Gold, #ffbd00);
+    border-color: var(--Gold); */
+    }
   @media (max-width: 360px) {
     width: 100%}
 `;

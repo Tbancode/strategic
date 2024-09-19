@@ -529,9 +529,22 @@ export const LinkBtn = styled.button`
         margin: 34.99px auto 200px auto ;
         padding: 17px 33px;
         cursor: pointer;
+        /* text-align: center; */
+        /* line-height: 60px; */
+        &:hover{
+    transform: scale(1.04);
+    transition: transform 0.5s ease;
+    color: var(--Charcoal);
+    background-color: #ffffff;
+    }
         a{
           text-decoration: none;
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          color: inherit;
         }
+    
         @media (max-width: 768px) {
         width: 262px;
         height: 60px;
@@ -557,6 +570,13 @@ export const PayTicket = styled.button`
         margin: 50px auto;
         padding: 17px 33px;
         cursor: pointer;
+        &:hover{
+    transform: scale(1.03);
+    transition: transform 0.5s ease;
+    color: var(--White);
+    background-color: var(--Gold, #ffbd00);
+    border-color: var(--Gold);
+    }
         a{
           text-decoration: none;
         }
@@ -587,7 +607,10 @@ export const VIP = styled.div`
         height: 321px;
         border-radius: '12px';
        }
-
+       img:hover{
+    transform: scale(1.04);
+    transition: transform 0.5s ease;
+       }
        h1{
         font-size: 32px;
         margin-bottom: 37px;
@@ -651,10 +674,25 @@ export const Perk = styled.div`
          justify-content: center;
          align-items: center;
          align-content: center;
+         @keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.0009);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
          div{
           width: 90%;
           margin: auto;
           justify-content: center;
+          animation: pulse 2s infinite;
          .web{
           margin: auto auto 200px 60px;
          /* width: 902px; */
@@ -869,6 +907,10 @@ export const Card = styled.div`
         border-radius: 16px;
         /* margin-right: 28px; */
         background: linear-gradient(219.07deg, rgba(0, 8, 193, 0.48) -32.35%, rgba(255, 255, 255, 0) 111.78%);
+        &:hover{
+    transform: scale(1.03);
+    transition: transform 0.5s ease;
+  }
        h2{
           font-family: var(--font-lora);
           font-size: 20px;

@@ -102,7 +102,7 @@ const CTASection = ({
         {section === 'payment' && <Stripe />}
         
       </CTAInner> 
-      {/* <Stripe /> */}
+    
     </CTAWrapper>
   );
 };
