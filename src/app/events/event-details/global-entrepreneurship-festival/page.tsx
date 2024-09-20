@@ -302,7 +302,7 @@ const GlobalEntrepreneurshipFestival = () => {
                    <p>{Select} Private Networking Events & <br />{' '}High-Net-Worth Dinners</p>
                    <p>{Select} VIP Lounge Access</p>
                      
-                     <PayTicket ><a href="global-entrepreneurship-festival/book-a-seat" onClick={() => handleCardClick('$5','VIP Platinum Experience', [
+                     <PayTicket ><a href="global-entrepreneurship-festival/book-a-seat" onClick={() => handleCardClick('$5,200','VIP Platinum Experience', [
       "Personal Government Protocol Officer",
       "24/7 GEF Concierge Services",
       "Armed Security",
