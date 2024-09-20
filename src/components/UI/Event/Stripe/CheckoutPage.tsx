@@ -93,7 +93,7 @@
 // export default CheckoutPage;
 
 // // Define the pulse animation
-// const pulse = keyframes`
+// const pulse = keyframes
 //   0%, 100% {
 //     opacity: 1;
 //   }
@@ -145,6 +145,12 @@ import convertToSubcurrency from '../../../../../utils/convertToSubcurrency';
 import SpinnerComponent from '@/components/Common/Spinner';
 import styled, { css, keyframes } from 'styled-components';
 
+
+
+
+
+
+
 const CheckoutPage = ({ amount }: { amount: number }) => {
   const stripe = useStripe();
   const elements = useElements();
@@ -155,6 +161,10 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+
+  localStorage.setItem('selectedName', name);
+    localStorage.setItem('selectedEmail', email)
+    localStorage.setItem('selectedPhone', phone)
 
   const baseDomain =
     process.env.NEXT_PUBLIC_NODE_ENV! === 'development'
@@ -183,6 +193,13 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoading(true);
+
+    localStorage.setItem('paymentFormData', JSON.stringify({
+      name,
+      email,
+      phone
+      
+    }));
 
     if (!stripe || !elements) {
       return;
@@ -214,35 +231,11 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
 
     if (error) {
       setErrorMessage(error.message);
-    } else {
-      // Send additional data to Google Sheets
-      const numericAmount = amount.toFixed(2); // Ensure amount has two decimal places
+     }
 
-      const formData = new FormData();
-      formData.append('Name', name);
-      formData.append('Email', email);
-      formData.append('Phone', phone);
-      formData.append('Amount', numericAmount);
 
-      try {
-        const response = await fetch("https://script.google.com/macros/s/AKfycbyjNv13r4zPEg4DeMamCHPEZYX8J6EtuDGBf0t5PUUhgYMKlV-i9i2Vuop-p-SYizVYJA/exec", {
-          method: 'POST',
-          body: formData,
-        });
-
-        if (response.ok) {
-          console.log('Data successfully sent to Google Sheets');
-        } else {
-          setErrorMessage('Failed to send data to Google Sheets');
-        }
-      } catch (error) {
-        console.error('Error:', error);
-        setErrorMessage('An error occurred');
-      }
-    }
-        
-    
-
+  // Send data to Google Sheets
+  
     setLoading(false);
   };
   
@@ -252,11 +245,11 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form className='form' onSubmit={handleSubmit}>
       <label htmlFor="name">Names</label>
       <input
         id="name"
-        name='Name'
+        name='Names'
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
