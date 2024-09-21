@@ -269,6 +269,7 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
         id="phone"
         type="tel"
         name='Phone'
+        placeholder='(+81) 334444637'
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
         required
