@@ -37,7 +37,7 @@ const PaymentSuccess = () => {
 
             // Send data to Google Sheets
             const formPayload = new FormData();
-            formPayload.append('Names', formData.name);
+            formPayload.append('Name', formData.name);
             formPayload.append('Email', formData.email);
             formPayload.append('Phone', formData.phone);
             formPayload.append('Amount', parsedAmount?.toString() || '');
