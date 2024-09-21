@@ -44,7 +44,7 @@ const PaymentSuccess = () => {
             // https://script.google.com/macros/s/AKfycbxLK4MT95n8ff16lzEJLl5524Yt1IqeJj2g367A3qOS7WdyM7YdekRZbDtgU2KpOIzaXA/exec
             try {
               const response = await fetch(
-                'https://script.google.com/macros/s/AKfycbxqQlq8Sa4tHoJbBV_z7wzQgXZ3LvYa5lR7vbuv_r9TB9UtEg_iSJP3ZTgmygK4aB5S1g/exec',
+                'https://script.google.com/macros/s/AKfycbxLK4MT95n8ff16lzEJLl5524Yt1IqeJj2g367A3qOS7WdyM7YdekRZbDtgU2KpOIzaXA/exec',
                 {
                   method: 'POST',
                   body: formPayload,
