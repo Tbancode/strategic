@@ -1,13 +1,8 @@
 import PaymentSuccess from '@/components/UI/PaymentSuccess';
 
-const PaymentSuccessPage = ({
-  searchParams: { amount },
-}: {
-  searchParams: {
-    amount: string;
-  };
-}) => {
-  return <PaymentSuccess amount={amount} />;
+const PaymentSuccessPage = () => {
+  
+  return <PaymentSuccess />;
 };
 
 export default PaymentSuccessPage;

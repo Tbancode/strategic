@@ -233,8 +233,6 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
       setErrorMessage(error.message);
      }
 
-
-  // Send data to Google Sheets
   
     setLoading(false);
   };
