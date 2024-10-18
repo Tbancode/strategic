@@ -342,7 +342,7 @@ const Form = styled.form`
     font-size: 1rem;
     font-family: var(--font-satoshi);
     /* color: var(--); */
-    font-weight: 350;
+    font-weight: 400;
     color: #2d2d2d;
   }
 
