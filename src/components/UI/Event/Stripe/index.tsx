@@ -230,7 +230,8 @@ export default Stripe;
 const StripeWrapper = styled.div`
   /* background: var(--White);
   padding: 2rem; */
-  background: rgba(4, 104, 244, 0.1); /* Transparent white */
+  background-color: #d8d7d5;
+  /* background: rgba(4, 104, 244, 0.1); Transparent white */
   /* backdrop-filter: blur(5px); Background blur for glass effect */
   /* -webkit-backdrop-filter: blur(10px); For Safari support */
   border-radius: 16px; /* Rounded corners */
@@ -256,10 +257,11 @@ const StripeWrapper = styled.div`
 
     h2 {
       font-family: var(--font-satoshi);
-      color: var(--Grey);
+      color: var(--Charcoal);
       
     }
   }
+ 
 `;
 
 const AmountOptions = styled.div`

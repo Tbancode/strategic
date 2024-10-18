@@ -139,6 +139,7 @@ import {
   useStripe,
   useElements,
   PaymentElement,
+  // PaymentElementOptions,
   CardElement
 } from '@stripe/react-stripe-js';
 import convertToSubcurrency from '../../../../../utils/convertToSubcurrency';
@@ -242,6 +243,33 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
     return <SpinnerComponent />;
   }
 
+  const options: any = {
+    appearance: {
+      theme: 'stripe',  // You can change this to 'night' or others if desired
+      variables: {
+        colorPrimary: '#000000',
+        colorText: '#ffffff',  // White text for inputs
+        fontSizeBase: '16px',
+      },
+      rules: {
+        '.Input': {
+          color: '#ffffff',  // Set input text color to white
+        },
+        '.Label': {
+          color: '#ffffff',  // Set label text color to white
+        },
+        '.Error': {
+          color: '#ff0000',  // Set error message color to red
+        },
+        '::placeholder': {
+          color: '#bbbbbb',  // Set placeholder text color
+        }
+      },
+    },
+  };
+  
+  
+
   return (
     <Form className='form' onSubmit={handleSubmit}>
       <label htmlFor="name">Names</label>
@@ -276,7 +304,7 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
       />
       
       
-      {clientSecret && <PaymentElement />}
+      {clientSecret && <PaymentElement options={options} />}
 
       {errorMessage && <div>{errorMessage}</div>}
 
@@ -304,24 +332,31 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  background-color: #d8d7d5;
+    
+  .StripeElement {
+    color: white !important; /* Ensure this is specific enough */
+}
 
   label {
     font-size: 1rem;
     font-family: var(--font-satoshi);
-    color: var(--White, #544f4f);
+    /* color: var(--); */
+    font-weight: 350;
+    color: #2d2d2d;
   }
 
   input {
     padding: 0.5rem;
     font-size: 1rem;
-    border: 1px solid var(--LightGray);
+    border: 0px solid var(--Charcoal);
     border-radius: 0.25rem;
     font-family: var(--font-satoshi);
     
   }
 
   div {
-    color: red;
+    color: #ffffff;
     margin-top: 0.5rem;
     font-size: 1rem;
     font-family: var(--font-satoshi);

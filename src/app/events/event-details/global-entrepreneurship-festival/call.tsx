@@ -130,7 +130,7 @@ const ImageSelectionComponent: React.FC = () => {
         </ImagesWrapper>
       )}
 
-      <LinkBtn style={{marginBottom: '75px'}} onClick={handleButtonClick}>
+      <LinkBtn style={{marginBottom: '75px', marginTop: '30px'}} onClick={handleButtonClick}>
         {showImages ? "SCHEDULE A CALL" : "SCHEDULE A CALL"}
       </LinkBtn>
       {alertMessage && <Alert>{alertMessage}</Alert>}
@@ -154,13 +154,17 @@ const ImagesWrapper = styled.div`
     opacity: 1;
     transform: translateY(0);
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 `;
 
 const ImageWrapper = styled.div<{ isSelected: boolean }>`
   cursor: pointer;
   text-align: center;
 
-  img {
+  & > img {
     display: block;
     width: 150px;
     height: 150px;
@@ -176,14 +180,20 @@ const ImageWrapper = styled.div<{ isSelected: boolean }>`
     text-align: center;
     margin-top: 26px;
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 18px;
     font-family: var(--font-satoshi);
     font-weight: 400;
   }
   @media (max-width: 768px) {
-    img{
-      width: 70px;
-      height: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    /* gap: 30px; */
+    margin: auto;
+    & > img{
+      width: 150px;
+      height: 150px; 
+      margin-left: 20px;
     }
       img:hover{
         transform: scale(1.02);
@@ -191,7 +201,7 @@ const ImageWrapper = styled.div<{ isSelected: boolean }>`
       }
     
     p{
-      font-size: 8px;
+      font-size: 18px;
       margin-top: 14px;
       margin-bottom: 8px;
     }
@@ -215,8 +225,8 @@ const IconLinks = styled.div`
   }
   @media (max-width: 768px) {
     img{
-      width: 12px;
-      height: 12px;
+      width: 20px;
+      height: 20px;
     }
   } 
 `;

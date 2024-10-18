@@ -19,6 +19,7 @@ export const CTAWrapper = styled.section`
     width: 100%;
     padding: 2.5rem 0;
     flex-direction: column;
+    /* justify-content: center; */
   }
 `;
 
@@ -35,7 +36,8 @@ export const CTAInner = styled.main`
 
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 80%;
+    margin: auto;
     flex-direction: column;
   }
 `;
@@ -115,9 +117,10 @@ export const CTATextCtn = styled.div`
 
   @media (max-width: 768px) {
     gap: 0.64rem;
-    width: 90%;
+    width: 80%;
     height: 600px;
     margin-left: 0px;
+    
     h1 {
       max-width: 13.1875rem !important;
       font-size: 1.9375rem;

@@ -26,6 +26,8 @@ export const GlobalStyles = styled.createGlobalStyle`
     overflow-x: hidden;
     background: var(--Charcoal);
 
+    
+
     @media (max-width: 768px) {
     }
     &::-webkit-scrollbar {
